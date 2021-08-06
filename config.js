@@ -1,0 +1,1 @@
+export const MONGODB = "mongodb+srv://kevo:kevo254@cluster0.ovvwn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
