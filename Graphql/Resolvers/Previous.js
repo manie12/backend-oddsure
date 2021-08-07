@@ -15,14 +15,13 @@ export const previousResolvers = {
         }
     },
     Mutation: {
-        async createGoldenTip(_, { date, home, away, gameType }) {
+        async createPreviousGame(_, { date, home, away, gameType }) {
 
             const newPost = new PreviousGame({
-                totalOdds,
+                date,
                 home,
                 away,
-                oddsToday,
-                createdAt: new Date().toISOString()
+                gameType,
 
             });
             const PreviousPost = await newPost.save();

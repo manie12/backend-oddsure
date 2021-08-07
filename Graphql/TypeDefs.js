@@ -6,6 +6,7 @@ type FreeTip{
     home: String!
     away: String!
     pick: String!
+    createdAt:String!
 
     
 }
@@ -15,6 +16,7 @@ type GoldenTip{
     home: String!
     away: String!
     oddsToday: String!
+    createdAt:String!
 
 }
 type BasicTip{
@@ -23,6 +25,7 @@ type BasicTip{
     home: String!
     away: String!
     oddsToday: String!
+    createdAt:String!
 
 }
 type VipTip{
@@ -31,9 +34,12 @@ type VipTip{
     home: String!
     away: String!
     oddsToday: String!
+    createdAt:String!
 
 }
 type previousGame{
+    id:ID!
+
     date: String!
     home: String!
     away: String!
